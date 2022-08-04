@@ -2,7 +2,27 @@
 h1{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 40px;;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+header li{
+    display: inline-flex;
+    padding:20px;
+    list-style:none ;
+    
+}
+header ul{
+    float:right;
+    justify-content: right;
+    list-style: none;
+}
+header a{
+    color:black;
+}
+li:hover{
+    background-color: goldenrod;
+
 }
 .container{
     max-width: 1200px;
@@ -26,4 +46,66 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.imgContainer{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.imgBox{
+    height: 200px;
+    width: 200px;
+    background-color: orangered;
+    border-radius: 50%;
+}
+main{
+    height:500px;
+    overflow: hidden;
+    width: 50%;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#sec2{
+    display: flex;
+}
+aside{
+    height:500px;
+    overflow: hidden;
+    width: 50%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+aside>.box{
+    height: 150px;
+    background-color: antiquewhite;
+    width:100%;
+
+}
+#sec3{
+    display: flex;
+}
+.borderBox{
+    height:200px;
+    background-color: red;
+    width:20vh;
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+    width:25%;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+footer{
+    background-color: black;
+    height:15vh;
+    width:100%;
+    border: 2px solid black;
 }
