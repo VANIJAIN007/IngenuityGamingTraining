@@ -1,0 +1,10 @@
+//Javascript Hoisting will make declaration to be automatically at the top
+//Note:Only declaration is Hoiseted ,not the Initialization
+
+
+x=10;
+console.log(x);
+var x;
+
+// console.log(x);
+// x=10;  not allowed
