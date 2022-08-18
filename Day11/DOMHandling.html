@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM(Document Object Model)</title>
+</head>
+<body>
+    <h1 id="head1">This is heading1</h1>
+    <h2 id="head2">This is subheading</h2>
+    <p id="para1" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius consequuntur aspernatur delectus temporibus. Aliquid nobis animi sequi eius ad reiciendis, qui perferendis vitae iure, perspiciatis quidem omnis recusandae repellendus autem unde laudantium, ipsum repudiandae voluptatibus sunt! Hic illum quas aperiam beatae non eos soluta temporibus. Iusto, iste asperiores minima nostrum deserunt itaque quae eius, rerum laboriosam optio dolorem, fugit nisi totam? Debitis ex molestias minus rem cupiditate natus, iste nemo ipsa voluptatem, harum excepturi atque impedit temporibus numquam sapiente qui tempora nihil? Vero modi eveniet provident, quo quisquam eaque est et dolore, aperiam nemo at? Cupiditate deserunt voluptates reiciendis vero.</p>
+    <p id="para2" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, nulla non maxime consectetur omnis minima enim animi quisquam. Tenetur laudantium corrupti aut dicta non sapiente reiciendis debitis earum doloribus voluptatibus delectus inventore iusto expedita saepe harum dolorum illum sint natus, quibusdam porro ratione quaerat veritatis ullam? Incidunt dolor, officiis natus consectetur quis nostrum deserunt nulla sequi neque at earum amet, aspernatur rem! Aspernatur, est itaque. Totam velit quod a, quasi impedit quas nesciunt fuga aliquid numquam debitis fugit aut nulla doloribus dolore dolores accusamus quo iusto quos hic, alias, ratione rem perferendis. Facere voluptatem ea sequi quas saepe, nam quidem.</p>
+    <!-- <button onclick="alert('Button is Clicked')">Click me</button> -->
+    <button onclick="PerformTask()">Click me</button>
+
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+    </ul>
+    <script src="dom.js">
+        // alert("script connected")
+        function PerformTask(){
+            alert("Button Clicked");
+            console.log("Clicked");
+        }
+        var btn=document.querySelector('button');
+        console.log(btn);
+    </script>
+</body>
+</html>
