@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage</title>
+</head>
+<body>
+    <h1>Local Storage | Session Storage</h1>
+    <pre>    
+        <label for="">Enter Usename :</label><input type="text" id="userName"/>
+        <label for="">Enter Password:</label> <input type="password" id="pwd"/>
+
+        <label for="">Enter Age :</label><input type="number" id="age"/>
+    <button id="add">Store Information</button>
+    <button id="remove">Remove storage</button>
+</pre>
+<!-- //selectors -->
+<a href="./Details.html">Details</a>
+
+<script>
+    var uname=document.getElementById("userName");
+    var btn=document.getElementById("add");
+    var btn1=document.getElementById("remove");
+    var output=document.getElementById("output");
+    var pwd=document.getElementById("pwd");
+    var age=document.getElementById("age");
+
+    btn.onclick=storeData;
+    function storeData(){
+        var data=uname.value;
+        // var data={
+        //     uname:uname.value,
+        //     password:pwd.value,
+        //     age:age.value,
+
+        // };
+        console.log(data);
+        window.localStorage.setItem("Info",data);
+        // console.log("Info",data);
+        alert("Data stored in local storage");
+    }
+    btn1.onclick=removeData;
+    function removeData(){
+        window.localStorage.removeItem("Info");
+        output.innerText="Data Removed:"+new Date().toLocaleString();
+    }
+    //window.localStorage.setItem(key,data)
+        //window.localStorage.getItem(key,data)
+            //window.localStorage.removeItem(key,data)
+
+
+            //for session storage 
+
+            // replace local storage with sessionStorage
+            //window is global so no need to write
+
+</script>
+
+
+</body>
+</html>
