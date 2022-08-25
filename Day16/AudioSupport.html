@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:url("./SoundHelix-Song-1.mp3");
+        }
+    </style>
+</head>
+<body>
+    <audio controls id="myAudio">
+        <source src="" type="audio/mp3" />
+        <source src="" type="audio/mp3" />
+        <source src="" type="audio/mp3" />
+
+    </audio>
+    <video controls width="100%" id="myvideo">
+        <source src="../Assets/y2mate.com - Kesariya Tera Ishq hai piyaSong lyricsBhrambhastra Ranveer KapoorAliah Bhatt_1080p.mp4" type="">
+    </video>
+    <button id="btn1">Play</button>
+    <script>
+        var myaudio=document.getElementById("myAudio");
+        console.log(myaudio);
+        var btn=document.getElementById("btn1");
+        btn.onclick=performTasks
+        function performTasks(){
+            myaudio.play();
+            myaudio.src="./SoundHelix-Song-1.mp3";
+            myaudio.play();
+            myaudio.load();
+            myaudio.autoplay=true;
+            // x.muted=true;
+            if(myaudio.muted==true){
+                myaudio.muted=false;
+            }
+            else{
+                myaudio.muted=true;
+            }
+
+        }
+        var newAudio=new Audio();
+        newAudio.src="./SoundHelix-Song-1.mp3";
+        newAudio.play();
+        newAudio.loop=true;
+        newAudio.play();
+        newAudio.load();
+        newAudio.play();
+    </script>
+</body>
+</html>
