@@ -143,11 +143,12 @@ function generateCoins(){
 }
 function enemyEntered(){
     if(frameCount%80==0){
+        console.log(frameCount);
         var enemy=createSprite(1200,100,40,10);
         enemy.y=random(50,450);
         enemy.addAnimation("rotate",enemyImage);
-        enemy.scale=0.5;
-        coins.lifetime=250;
+        enemy.scale=0.1;
+        enemy.lifetime=250;
         enemyGroup.add(enemyImage);
     }
 
