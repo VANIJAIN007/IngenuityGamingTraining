@@ -93,14 +93,14 @@ function draw(){
             temp=null;
         }
     }
-    enemyEntered();
-    for(var i=0;i<enemyGroup.length;i++){
-        var temp=enemyGroup.get(i);
-        if(mario.isTouching(temp)){
-            mario.destroy();
-            temp=null;
-        }
-    }
+    // enemyEntered();
+    // for(var i=0;i<enemyGroup.length;i++){
+    //     var temp=enemyGroup.get(i);
+    //     if(mario.isTouching(temp)){       
+    //         enemy.destroy();
+    //         temp=null;
+    //     }
+    // }
     
 
 
@@ -144,12 +144,13 @@ function generateCoins(){
 function enemyEntered(){
     if(frameCount%80==0){
         console.log(frameCount);
-        var enemy=createSprite(1200,100,40,10);
-        enemy.y=random(50,450);
+        var enemy=createSprite(200,520,40,10);
+        enemy.y=random(1200,200);
         enemy.addAnimation("rotate",enemyImage);
         enemy.scale=0.1;
+        enemy.velocityX=-5;
         enemy.lifetime=250;
-        enemyGroup.add(enemyImage);
+        enemyGroup.add(enemy);
     }
 
 }
